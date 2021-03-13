@@ -14,7 +14,7 @@ module.exports = class DepthCalculator {
       }
       arrDepth.push(depth);
     });
-    const maxDepth = arrDepth.sort((a, b) => b - a)[0];
-    return maxDepth;
+
+    return Math.max(...arrDepth);
   }
 };
